@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-sift-science",
+  "version": "0.0.1",
+  "description": "Sift Science Integration Plugin for Cordova Apps.",
+  "cordova": {
+    "id": "cordova-plugin-sift-science",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amovsesy/cordova-plugin-sift-science.git"
+  },
+  "keywords": [
+    "cordova",
+    "Sift Science"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Aleksandr Movsesyan",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/amovsesy/cordova-plugin-sift-science/issues"
+  },
+  "homepage": "https://github.com/amovsesy/cordova-plugin-sift-science"
+}

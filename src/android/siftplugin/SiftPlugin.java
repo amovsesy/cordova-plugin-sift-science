@@ -2,7 +2,12 @@ package siftplugin;
 
 import android.app.Activity;
 
+import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 import siftscience.android.Sift;
 
@@ -63,10 +68,14 @@ public class SiftPlugin extends CordovaPlugin {
       return true;
     } else if (action.equals("unsetUserID")) {
       Sift.unsetUserId();
+      return true;
     } else if (action.equals("setUserID")) {
       String userID = args.getString(0);
 
       Sift.setUserId(userID);
+      return true;
     }
+
+    return false;
   }
 }

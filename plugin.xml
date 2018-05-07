@@ -2,13 +2,17 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="sift-science"
+  id="cordova-plugin-sift-science"
   version="0.0.1">
-  <name>sift-science</name>
+  <name>cordova-plugin-sift-science</name>
   <license>Apache 2.0</license>
   <keywords>cordova,sift science</keywords>
   <repo>https://github.com/amovsesy/cordova-plugin-sift-science.git</repo>
   <issue>https://github.com/amovsesy/cordova-plugin-sift-science/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
 
   <dependency id="cordova-plugin-cocoapod-support" />
 
@@ -27,12 +31,13 @@
     </config-file>
 
     <source-file src="src/android/siftplugin/SiftPlugin.java" target-dir="src/siftplugin" />
+
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
   </platform>
 
   <!-- iOS -->
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
-      <pod name="Sift" />
       <feature name="SiftPlugin">
         <param name="ios-package" value="SiftPlugin" />
         <param name="onload" value="true" />
@@ -47,5 +52,9 @@
 
     <header-file src="src/ios/SiftPlugin.h" />
     <source-file src="src/ios/SiftPlugin.m" />
+
+    <pods-config ios-min-version="8.0" use-frameworks="true">
+    </pods-config>
+    <pod id="Sift" />
   </platform>
 </plugin>

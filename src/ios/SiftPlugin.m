@@ -6,8 +6,6 @@
   - (void)pluginInitialize
   {
     NSLog(@"[cordova-plugin-sift-science] plugin initialized");
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
   }
 
   - (void) initSift:(CDVInvokedUrlCommand*)command
