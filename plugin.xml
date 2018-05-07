@@ -17,8 +17,8 @@
   <dependency id="cordova-plugin-cocoapod-support" />
 
   <!-- JavaScript -->
-  <js-module src="www/sift.js" name="Sift">
-    <clobbers target="Sift" />
+  <js-module src="www/sift.js" name="SiftJs">
+    <clobbers target="SiftJs" />
   </js-module>
 
   <!-- Android -->
