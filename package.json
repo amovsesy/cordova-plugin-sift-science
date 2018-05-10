@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-sift-science",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sift Science Integration Plugin for Cordova Apps.",
   "cordova": {
     "id": "cordova-plugin-sift-science",
