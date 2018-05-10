@@ -29,6 +29,7 @@
 
   - (void) unsetUserID:(CDVInvokedUrlCommand*)command
   {
+    [[Sift sharedInstance] setUserId:@""];
   }
 
 @end

@@ -39,7 +39,9 @@ SiftJs.prototype.setUserID = function(userID) {
 }
 
 SiftJs.prototype.unsetUserID = function() {
-  exec(siftSuccessCallback, siftErrorCallback, 'SiftPlugin', 'unsetUserID', [userID]);
+  _sift.push(['_setUserId', '']);
+  
+  exec(siftSuccessCallback, siftErrorCallback, 'SiftPlugin', 'unsetUserID', []);
 }
 
 // export
